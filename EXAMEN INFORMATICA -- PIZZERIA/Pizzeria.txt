@@ -1,0 +1,37 @@
+<?php
+// Conexión a la base de datos
+$conn = new mysqli('localhost', 'usuario', 'contraseña', 'basededatos');
+
+// Consulta para obtener el menú de la pizzería
+$query = "SELECT * FROM MENU PIZZERIA";
+$result = $conn->query($query);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú de la Pizzería</title>
+</head>
+<body>
+  <h1>Menú de la Pizzería</h1>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>MENU PIZZERIA</th>
+      <th>PIZZAS</th>
+      <th>Precio</th>
+      <th>180MXN</th>
+    </tr>
+    <?php while ($row = $result->fetch_assoc()): ?>
+    <tr>
+      <td><?php echo $row['id']; ?></td>
+      <td><?php echo $row['MENU PIZZERIA']; ?></td>
+      <td><?php echo $row['PIZZAS']; ?></td>
+      <td><?php echo $row['180MXN']; ?></td>
+      <td><img src="<?php echo $row['imagen']; ?>" width="100" height="100"></td>
+    </tr>
+    <?php endwhile; ?>
+  </table>
+</body>
+</html>

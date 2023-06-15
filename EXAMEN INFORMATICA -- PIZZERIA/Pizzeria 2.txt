@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú de Pizzería</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .menu-item-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .menu-item-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .menu-item-description {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .menu-item-price {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Menú de Pizzería</h1>
+  </div>
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="pizza_margarita.jpg" alt="Pizza Margarita">
+      <div class="menu-item-details">
+        <h2 class="menu-item-title">Pizza Margarita</h2>
+        <p class="menu-item-description">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
+        <p class="menu-item-price">$10</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="pizza_pepperoni.jpg" alt="Pizza Pepperoni">
+      <div class="menu-item-details">
+        <h2 class="menu-item-title">Pizza Pepperoni</h2>
+        <p class="menu-item-description">Irresistible pizza con salsa de tomate, mozzarella y pepperoni.</p>
+        <p class="menu-item-price">$12</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
